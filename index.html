@@ -26,13 +26,13 @@
 
   <script src="js/script.js"></script>
 
-  <div class="wrapper">
+  <div class="wrapper" id="wrapper">
 
     <header class="header" id="header">
       <div class="container">
         <div class="header__body">
           <div class="int">
-            <div class="int__logo"><img src="img/logo.png" alt=""></div>
+            <div class="int__logo" data-scroll="#wrapper"><img src="img/logo.png" alt=""></div>
             <div class="int__name">
               <div class="int__title">Title</div>
               <div class="int__subtitle">Subtitle</div>
@@ -40,10 +40,11 @@
           </div>
           <nav class="nav" id="nav">
             <ul class="nav__list">
-              <li><a href="#" class="nav__link active">main</a></li>
-              <li><a href="#" class="nav__link">work</a></li>
-              <li><a href="#" class="nav__link">about me</a></li>
-              <li><a href="#" class="nav__link">blog</a></li>
+              <li><a href="#" class="nav__link" data-scroll="#about">about</a></li>
+              <li><a href="#" class="nav__link" data-scroll="#services">services</a></li>
+              <li><a href="#" class="nav__link" data-scroll="#clients">clients</a></li>
+              <li><a href="#" class="nav__link" data-scroll="#team">team</a></li>
+              <li><a href="#" class="nav__link nav__link--up" id="upbutton" data-scroll="#wrapper">&#x25b2</a></li>
             </ul>
           </nav>
           <div class="burger" id="burger"><span></span></div>
@@ -55,17 +56,17 @@
 
       <section class="intro" id="intro">
         <div class="container">
-          <div class="intro__body">
-            <h2 class="intro__uptitle" data-aos="fade-down" data-aos-delay="200">Our uptitle</h2>
-            <h1 class="intro__title" data-aos="fade-down" data-aos-delay="400">Welcome to our site</h1>
-            <div class="intro__text" data-aos="fade-down" data-aos-delay="600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, esse consequatur molestias, voluptas ex eius sint ipsam sit facilis iusto necessitatibus praesentium! Accusamus nihil eligendi accusantium qui, dicta similique placeat eum neque! Dolorum porro nesciunt aut minus illum ab impedit, eveniet, voluptas atque quo quasi explicabo, officia excepturi est incidunt!</div>
-            <a href="#" class="big-button" data-aos="fade-down" data-aos-delay="800">Contact us</a>
+          <div class="intro__body" data-aos="zoom-in" data-aos-duration="1500">
+            <h2 class="intro__uptitle">Our uptitle</h2>
+            <h1 class="intro__title">Welcome to our site</h1>
+            <div class="intro__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, esse consequatur molestias, voluptas ex eius sint ipsam sit facilis iusto necessitatibus praesentium! Accusamus nihil eligendi accusantium qui, dicta similique placeat eum neque! Dolorum porro nesciunt aut minus illum ab impedit, eveniet, voluptas atque quo quasi explicabo, officia excepturi est incidunt!</div>
+            <a href="#" class="big-button">Contact us</a>
           </div>
         </div>
       </section>
 
       <div class="about">
-        <div class="container">
+        <div class="container" id="about">
           <div class="block-title" data-aos="fade-up">
             <h3 class="block-title__uptitle">Who we are</h3>
             <h2 class="block-title__title">Story about us</h2>
@@ -119,7 +120,7 @@
       </div><!-- about -->
 
       <div class="services">
-        <div class="container">
+        <div class="container" id="services">
           <div class="block-title block-title--color" data-aos="fade-up">
             <h3 class="block-title__uptitle">What we do</h3>
             <h2 class="block-title__title">Our services</h2>
@@ -176,7 +177,7 @@
       </div>
 
       <div class="clients">
-        <div class="container">
+        <div class="container" id="clients">
           <div class="block-title" data-aos="fade-up">
             <h3 class="block-title__uptitle">Our costumers</h3>
             <h2 class="block-title__title block-title__title--notext">Happy clients</h2>
@@ -247,7 +248,7 @@
       </div>
 
       <div class="team">
-        <div class="container">
+        <div class="container" id="team">
           <div class="block-title block-title--color" data-aos="fade-up">
             <h3 class="block-title__uptitle">Dream team</h3>
             <h2 class="block-title__title">Our team</h2>
